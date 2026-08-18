@@ -93,7 +93,7 @@ window.addEventListener('appinstalled', () => {
 // ==========================================================================
 // CONFIG & INVALIDACE CACHE
 // ==========================================================================
-const TESTING = true;
+const TESTING = false;
 
 const FESTIVAL_ID = 'ozora_2026';
 const DATA_VERSION = 'v1.0';
