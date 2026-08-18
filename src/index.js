@@ -93,7 +93,7 @@ window.addEventListener('appinstalled', () => {
 // ==========================================================================
 // CONFIG & INVALIDACE CACHE
 // ==========================================================================
-const TESTING = false;
+const TESTING = true;
 
 const FESTIVAL_ID = 'ozora_2026';
 const DATA_VERSION = 'v1.0';
@@ -346,7 +346,7 @@ function updateCurrentTimeTracker(allowScroll = true) {
   let nowTS;
 
   if (TESTING) {
-    const fiveDaysInSeconds = 11 * 24 * 60 * 60;
+    const fiveDaysInSeconds = 3 * 24 * 60 * 60;
     nowTS = Math.floor(Date.now() / 1000) + fiveDaysInSeconds;
   } else {
     nowTS = Math.floor(Date.now() / 1000);
