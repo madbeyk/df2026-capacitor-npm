@@ -1,0 +1,34 @@
+{
+  "name": "Digital Forest 2026 Line-Up Timetable",
+  "short_name": "Digital Forest 2026",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "description": "Digital Forest 2026 Line-Up Timetable PWA Website",
+  "icons": [{
+    "src": "img/48x48.png?20260811",
+    "sizes": "48x48",
+    "type": "image/png"
+  }, {
+    "src": "img/72x72.png?20260811",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "img/96x96.png?20260811",
+    "sizes": "96x96",
+    "type": "image/png"
+  }, {
+    "src": "img/144x144.png?20260811",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "img/192x192.png?20260811",
+    "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "img/512x512.png?20260811",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "parcel-timetable-swiper",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --host 192.168.1.120 --port 1234 src/index.html",
+    "ionic:build:before": "npx pnpm install",
+    "build": "parcel build --public-url /",
+    "ionic:build": "pnpm run build",
+    "ionic:cap:copy": "pnpm exec cap copy",
+    "ionic:cap:sync": "pnpm exec cap sync"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.0",
+    "@parcel/packager-raw-url": "2.16.4",
+    "@parcel/transformer-webmanifest": "2.16.4",
+    "parcel": "^2.16.4",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/ios": "^8.5.0",
+    "@capacitor/local-notifications": "^8.2.1",
+    "@capacitor/status-bar": "^8.0.3",
+    "@capacitor/toast": "^8.0.1",
+    "swiper": "^10.0.4"
+  }
+}

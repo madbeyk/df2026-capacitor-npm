@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Digital Forest 2026 Line-up</title>
+  <meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, height=device-height, viewport-fit=cover'>
+  <meta name='theme-color' content='#000' />
+  
+  <meta name='apple-mobile-web-app-capable' content='yes'>
+  <meta name='mobile-web-app-capable' content='yes'>
+  <meta name='apple-mobile-web-app-title' content='DF 2026 Line-up'>
+
+  <link rel='shortcut icon' sizes='48x48' href='img/48x48.png'>
+  <link rel='shortcut icon' sizes='192x192' href='img/192x192.png'>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Link Swiper's CSS a našeho stylu -->
+  <link rel='stylesheet' href='css.css?20260723'>
+  <style>
+    .menu {
+      display: grid;
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    @media all and (min-width:1500px){
+      .menu { grid-template-columns: repeat(12, 1fr); }
+    }
+    @media all and (min-width:800px) and (max-width:1499px){
+      .menu { grid-template-columns: repeat(6, 1fr); }
+    } 
+    @media all and (min-width:550px) and (max-width:799px){
+      .menu { grid-template-columns: repeat(4, 1fr); }
+    }
+    @media all and (min-width:412px) {
+      .menu { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media all and (max-width:411px){
+      .menu { grid-template-columns: repeat(1, 1fr); }
+    }
+
+    .swiper-slide {
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      background-color: #f9f9f9;
+    }
+  
+    table { border-collapse: collapse; }
+    td {
+      padding: 0;
+      display:inline-table;
+      overflow: hidden;
+      background-color: #f0f0f0;
+    }
+
+    /* Instalační banner PWA */
+    #pwa-install-banner {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      background: rgba(20, 20, 20, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+      display: none;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    #pwa-install-btn {
+      background: #ff3b30;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Instalační dialog / banner -->
+  <div id="pwa-install-banner">
+    <span>Nainstalovat aplikaci na plochu?</span>
+    <button id="pwa-install-btn">Nainstalovat</button>
+  </div>
+
+  <!-- Fixní tlačítko s otazníkem -->
+  <button id="info-btn" class="info-btn" aria-label="Informace o aplikaci">?</button>
+
+  <!-- Overlay modal okno -->
+  <div id="info-modal" class="info-modal-backdrop hidden">
+    <div class="info-modal-content">
+      <button id="info-close-btn" class="info-close-btn" aria-label="Zavřít">&times;</button>
+      
+      <h2 class="info-title">Digital Forest 2026</h2>
+      <p class="info-date-loc">20. – 23. 8. 2026<br/>Chotěvice, Rekreační středisko Svatá Kateřina</p>
+
+      <div class="info-body">
+        <div class="info-section">
+          <strong>O festivalu</strong>
+          <p>
+            Magický psytrance festival v podhůří Krkonoš.<br/>
+            Velká jména ze zahraničí a špičkový český line-up.<br/>
+            Špičkový zvuk, uv-aktivní dekorace a bohatý doprovodný program.<br/>
+            <br/>  
+            🏊‍♂️ Koupání, 🌲 les, 🎶 3 stages 🎭 performance, 🔥 fireshow, 🛠️ workshop area, 🚿 sprchy, 🛏️ chatky k pronájmu.
+          </p>
+        </div>
+
+        <div class="info-section">
+          <strong>Aplikace & Autor</strong>
+          <p>Offline timetable s notifikacemi oblíbených interpretů. Vytvořil Marek Förster (Mad Diffusion). madbeyk@gmail.com</p>
+        </div>
+      </div>
+
+      <a href="https://www.facebook.com/events/1900728650874721/" target="_blank" rel="noopener noreferrer" class="info-fb-btn">
+        Facebook Event
+      </a><br/>
+      <a href="https://www.instagram.com/digitalforestmusicfestival/" target="_blank" rel="noopener noreferrer" class="info-fb-btn">
+        Instagram
+      </a>
+    </div>
+  </div>  
+
+  <div class="swrapper" style="height:100svh; overflow-y:scroll;">
+    <div class="content swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-id="Mainstage">
+          <div class="sticky"><div class="menu__item"><span class="stage-name">Mainstage</span> <span class="header-date-tag"></span></div></div>
+        </div>
+        <div class="swiper-slide" data-id="Groovy Techno Stage">
+          <div class="sticky"><div class="menu__item"><span class="stage-name">Groovy Techno Stage</span> <span class="header-date-tag"></span></div></div>
+        </div>
+        <div class="swiper-slide" data-id="Chill-out">
+          <div class="sticky"><div class="menu__item"><span class="stage-name">Chill-out</span> <span class="header-date-tag"></span></div></div>
+        </div>
+        <div class="swiper-slide" data-id="Workshopy">
+          <div class="sticky"><div class="menu__item"><span class="stage-name">Workshopy</span> <span class="header-date-tag"></span></div></div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
